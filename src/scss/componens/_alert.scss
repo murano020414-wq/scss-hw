@@ -1,0 +1,32 @@
+@use "../utils/placeholder" as p;
+@use "../utils/variebles" as v;
+:root {
+    --border-color: rgba(77, 77, 202, 0.79);
+    --text-color: rgba(97, 54, 146, 0.82);
+}
+
+
+.alert {
+
+&--section {
+    @extend %alert-base;
+}
+
+&--success {
+    padding: 25px 25px;
+    text-align: center;
+}
+
+&__title {
+    margin-bottom: 45px;
+    font-size: 40px;
+    color: v.$t-color;
+    font-family: sans-serif;
+}
+
+&__text {
+    font-size: 20px;
+    color: v.$t-color;
+
+}
+}

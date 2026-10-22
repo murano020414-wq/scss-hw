@@ -1,0 +1,9 @@
+@mixin tag($y, $x, $bg) {
+   border-radius: $x;
+   max-width: $y;
+   width: 100%;
+   display: block;
+   margin: 0 auto;
+   background-color: $bg;
+}
+ 
